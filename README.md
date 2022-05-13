@@ -20,12 +20,12 @@ https://github.com/cinderblocks/libremetaverse
 
 -  Make sure you have at least `dotnet` installed, with a valid net5.0/net6.0 SDK _and_ runtime available!
 
--  This update includes a solution file to skip the GUI applications (which will run only under Windows anyway). Use `LibreMetaverse.ReleaseNoGUI.sln` instead
+-  This update includes a solution file to skip the GUI applications (which will run only under Windows anyway). Use `LibreMetaverse.ReleaseNoGui.sln` instead
 
--  From the root, run `dotnet restore LibreMetaverse.ReleaseNoGUI.sln`. You should get some errors regarding missing Windows libraries; that's ok, you can ignore those, they're to be expected since Linux/macOS do _not_ include such libraries. Some test applications are Windows-only.  
+-  From the root, run `dotnet restore LibreMetaverse.ReleaseNoGui.sln`. You should get some errors regarding missing Windows libraries; that's ok, you can ignore those, they're to be expected since Linux/macOS do _not_ include such libraries. Some test applications are Windows-only.  
 If all goes well, you should now have all dependent packages properly installed.
 
--  From the root, run `dotnet msbuild LibreMetaverse.ReleaseNoGUI.sln`, and enjoy the superfast Roslyn compiler at work 😄 It should finish after a few minutes, depending on the speed of your machine.
+-  From the root, run `dotnet msbuild LibreMetaverse.ReleaseNoGui.sln`, and enjoy the superfast Roslyn compiler at work 😄 It should finish after a few minutes, depending on the speed of your machine.
 
 -  Your binaries will be under `../bin/net5.0` or `../bin/net6.0` (there might be a few more directories under `../bin`), depending on what runtimes you have installed on your system. Make sure you `cd` to the correct directory depending on the runtime you have, and then search for all your binaries there: they should be normal-looking executable files (with the `x` attribute set) and having the name of the appropriate test application (e.g. `TestClient` for the interactive testing tool).
 
